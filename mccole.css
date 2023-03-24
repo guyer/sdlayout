@@ -67,6 +67,34 @@
   .contents {
     margin-left: var(--sidebar-width);
   }
+
+  /*
+   * Flex grid
+   */
+  .row {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    left: 0;
+    top: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: var(--faintgray);
+    border-right: solid var(--darkgray) var(--lightborder);
+  }
+
+  /*
+   * Flex grid
+   */
+  .row {
+      width: 100%
+  }
 }
 
 /*
@@ -350,15 +378,6 @@ th, td {
  */
 a.gl-ref {
     font-weight: bold;
-}
-
-/*
- * Flex grid
- */
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%
 }
 
 .row > * {
